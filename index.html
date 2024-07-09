@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div> 
+			<form action="" method="get" onsubmit="return validate();">
+				<h1 id="p">Responsive Contact us Form</span></h1><br>
+				<input type="text" placeholder="First Name" id="firstname">
+				<input type="text" placeholder="Last Name" id="lastname">
+				<br>
+				<input type="text" placeholder="Email Address" id="email">
+				<input type="password" placeholder="Enter your password" id="password">
+				<h4>Write your message</h4>
+				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<br>
+				<br>
+				<input type="submit" value="SUBMIT" id="buttom"/>
+			</form>
+		</div>
+		<script>
+			function validate(){
+            var firstname = document.getElementById('firstname').value;
+			var lastname = document.getElementById('lastname').value;
+			var email = document.getElementById('email').value;
+			var password = document.getElementById('password').value;
+
+
+            var valid = true;
+            if (firstname == ""){
+            document.getElementById('firstname').style.border="1px solid red";
+            valid = false;
+            }
+			if (lastname == ""){
+            document.getElementById('lastname').style.border="1px solid red";
+            valid = false;
+            }
+			if (email == ""){
+            document.getElementById('email').style.border="1px solid red";
+            valid = false;
+            }
+			if (password == ""){
+            document.getElementById('password').style.border="1px solid red";
+            valid = false;
+            }
+        }
+		</script>
+	</body>
+</html>
+
